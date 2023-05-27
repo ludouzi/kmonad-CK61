@@ -19,8 +19,20 @@
   ;; Toggle layer on hold, switch layer on tap
   fn (tap-hold-next-release 400 (layer-switch m1) (layer-toggle m1))
 
-  ;; Stop media
+  ;; Stop
   st stopcd
+
+  ;; Play
+  pp KeyPlayPause
+
+  ;; Prev
+  prev KeyPreviousSong
+
+  ;; Next
+  next KeyNextSong
+
+  ;; 102nd
+  nubs Key102nd
 )
 
 ;; default layer
@@ -34,7 +46,7 @@
 
 (deflayer m1
   grv f1   f2   f3   f4   f5   f6   f7   f8   f9   f10   f11   f12   _
-  _   _    up   _    _    _    _    volu _    @st  pp    prev  next  nubs
+  _   _    up   _    _    _    _    volu _    @st  @pp   @prev @next @nubs
   @rs lft  down rght _    _    _    vold ins  home pgup  pgdn  _
   _   _    _    caps _    _    _    _    del  end  up    _
   _   _    _              _                   lft  down  rght
